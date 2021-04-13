@@ -2,6 +2,8 @@ package me.towdium.jecalculation;
 
 import mcp.MethodsReturnNonnullByDefault;
 import me.towdium.jecalculation.gui.JecaGui;
+import me.towdium.jecalculation.JustEnoughCalculation;
+import me.towdium.jecharacters.JechConfig;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
@@ -40,7 +42,7 @@ public class JecaItem extends Item {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         if (!JecaConfig.clientMode.get()){
-            JustEnoughCalculation.logger.info("regist item");
+            JustEnoughCalculation.logger.info("regist calculator item");
             event.getRegistry().registerAll(CRAFT, MATH);
         }
     }
