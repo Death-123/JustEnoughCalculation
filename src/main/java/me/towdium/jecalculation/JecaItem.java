@@ -39,7 +39,9 @@ public class JecaItem extends Item {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(CRAFT, MATH);
+        if (!JecaConfig.clientMode.get()){
+            event.getRegistry().registerAll(CRAFT, MATH);
+        }
     }
 
     @Override
