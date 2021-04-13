@@ -40,6 +40,7 @@ public class JecaItem extends Item {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         if (!JecaConfig.clientMode.get()){
+            JustEnoughCalculation.logger.info("regist item");
             event.getRegistry().registerAll(CRAFT, MATH);
         }
     }
