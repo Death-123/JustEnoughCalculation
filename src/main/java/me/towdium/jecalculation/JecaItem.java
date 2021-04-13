@@ -3,7 +3,7 @@ package me.towdium.jecalculation;
 import mcp.MethodsReturnNonnullByDefault;
 import me.towdium.jecalculation.gui.JecaGui;
 import me.towdium.jecalculation.JustEnoughCalculation;
-import me.towdium.jecharacters.JechConfig;
+import me.towdium.jecalculation.JecaConfig;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
